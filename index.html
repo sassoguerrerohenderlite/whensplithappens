@@ -595,7 +595,7 @@ const feedURL = "https://familylawyerjax.com/feed/";
             <div id="press-rss-feed">Loading...</div>
             <script>
 const pressFeedURL = "https://app.pressadvantage.com/feeds/channel/sasso-guerrero-henderlite?organization=sasso-guerrero-henderlite";
-  const pressRssURL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(pressFeedURL)}`;
+const pressRssURL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(pressFeedURL)}&api_key=g2tbbn7avnc3zqbnoywvc10i5r66rm4wd5mqoxwa`;
 
   fetch(pressRssURL)
     .then(response => response.json())
