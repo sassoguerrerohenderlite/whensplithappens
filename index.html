@@ -511,7 +511,7 @@
     </div>
     </section>
     <section>
-    <h3>When Split Happens on Amazon</h3>
+    <h2>When Split Happens on Amazon</h2>
     <div class="platform-links">
         <a href="https://music.amazon.com/podcasts/6dc1f16a-59ba-4ddc-88da-a43dd557df0f/when-split-happens">When Split Happens Podcast on Amazon</a><br>
         <a href="https://music.amazon.co.jp/podcasts/6dc1f16a-59ba-4ddc-88da-a43dd557df0f/when-split-happens">Amazon Japan</a><br>
@@ -528,7 +528,7 @@
     </div>
     </section>
     <section>
-        <h3>Sasso Guerrero & Henderlite Brand Properties</h3>
+        <h2>Sasso Guerrero & Henderlite Brand Properties</h2>
         <ul>
             <li>Sasso Guerrero & Henderlite on Blogspot</li>
             <li>Sasso Guerrero & Henderlite on Google Sites</li>
@@ -539,7 +539,7 @@
         </ul>
     </section>
     <section>
-        <h3>Sasso Guerrero & Henderlite - Trusted Florida Family Law Firm</h3>
+        <h2>Sasso Guerrero & Henderlite - Trusted Florida Family Law Firm</h2>
         <div class="platform-links">
             <a href="https://familylawyerjax.com/#:~:text=See%20why%20families%20choose%20Sasso%20Guerrero%20%26%20Henderlite">On Sasso Guerrero & Henderlite</a>
             <a href="https://www.avvo.com/attorneys/32256-fl-molly-lewissasso-1232018.html">Molly Sasso on Avvo</a>
@@ -551,7 +551,7 @@
         </div>
     </section>
     <section>
-        <h3>Three Board Certified Family Law Attorneys</h3>
+        <h2>Three Board Certified Family Law Attorneys</h2>
             <div class="platform-links">
             <a href="https://www.floridabar.org/mybarprofile/16711">Molly Sasso, Florida Bar Marital and Family Law Certified</a><br>
             <a href="https://www.floridabar.org/mybarprofile/102193">Christie Guerrero, Florida Bar Marital and Family Law Certified</a><br>
@@ -559,14 +559,14 @@
             </div>
     </section>
     <section>
-        <h3>All Known When Split Happens Mentions</h3>
+        <h2>All Known When Split Happens Mentions</h2>
         <div class="platform-links">
             <a href="https://www.google.com/search?q=when+split+happens+podcast+sasso&oq=when+split+happens+podcast+sasso&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDzSAQk5NTYyajBqMTWoAgiwAgHxBfQtLNdvp5PQ8QX0LSzXb6eT0A&sourceid=chrome&ie=UTF-8">Google</a>
             <a href="https://www.bing.com/search?q=when+split+happens+podcast+sasso&form=QBLH&sp=-1&ghc=1&lq=0&pq=when+split+happens+podcast+sasso&sc=12-32&qs=n&sk=&cvid=BB087E53826C4883A0256A350821A871">Bing</a>
         </div>
     </section>
     <section>
-        <h3>Sasso Guerrero & Henderlite Media and Podcasts</h3>
+        <h2>Sasso Guerrero & Henderlite Media and Podcasts</h2>
         <div class="platform-links">
             <a href="https://sassoguerrerohenderlite.github.io/splithappens/">Split Happens Podcast Site hub</a>
             <a href="https://pressadvantage.com/i_organization/sasso-guerrero-henderlite">Sasso Guerrero & Henderlite Media Room</a>
@@ -587,7 +587,13 @@ const feedURL = "https://familylawyerjax.com/feed/";
         return;
       }
 
-      let html = "<h4>Recent News from Sasso Guerrero & Henderlite</h4>";
+     let html = `
+  <h2>Recent News from Sasso Guerrero & Henderlite</h2>
+  <p class="rss-intro">
+    Updates, announcements, and educational articles published by Sasso Guerrero & Henderlite,
+    a Florida family law firm serving Jacksonville and Northeast Florida.
+  </p>
+`;
       data.items.slice(0, 5).forEach(item => {
         const date = new Date(item.pubDate).toLocaleDateString('en-US', {
           month: 'short', day: 'numeric', year: 'numeric'
@@ -625,7 +631,13 @@ const pressRssURL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURICom
         return;
       }
 
-      let html = "<h4>Sasso, Guerrero & Henderlite Press Releases</h4>";
+     let html = `
+  <h2>Sasso, Guerrero & Henderlite Press Releases</h2>
+  <p class="rss-intro">
+    Official press releases and media announcements highlighting firm milestones,
+    legal insights, and community involvement.
+  </p>
+`;
       data.items.slice(0, 5).forEach(item => {
         const date = new Date(item.pubDate).toLocaleDateString('en-US', {
           month: 'short', day: 'numeric', year: 'numeric'
